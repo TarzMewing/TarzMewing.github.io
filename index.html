@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>TETRIS</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="game-container">
+
+  <div class="sidebar">
+
+    <div class="card">
+      <h3>SCORE</h3>
+      <p id="score">0</p>
+    </div>
+
+    <div class="card">
+      <h3>HOLD</h3>
+      <canvas id="holdCanvas"
+      width="80"
+      height="80"></canvas>
+    </div>
+
+    <div class="card">
+      <h3>NEXT</h3>
+      <canvas id="nextCanvas"
+      width="80"
+      height="80"></canvas>
+    </div>
+
+  </div>
+
+  <canvas id="game"></canvas>
+
+  <div class="controls">
+
+    <button id="left">◀</button>
+
+    <button id="rotate">⟳</button>
+
+    <button id="right">▶</button>
+
+  </div>
+
+  <div class="controls">
+
+    <button id="down">▼</button>
+
+    <button id="drop">
+      DROP
+    </button>
+
+    <button id="hold">
+      HOLD
+    </button>
+
+  </div>
+
+</div>
+
+<audio id="bgm" loop autoplay>
+<source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8e6d7d5.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
